@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AI Bus Time System - Smart Search</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right,#ff0000,#ffcc00);
+}
+/* Menu Bar */
+nav{
+    background:#b30000;
+    padding:15px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    padding:10px 20px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    background:#ffeb3b;
+    color:#b30000;
+}
+
+/* Main Box */
+.container{
+    width:80%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 0px 15px gray;
+}
+
+h1{
+    text-align:center;
+    color:#b30000;
+}
+
+p{
+    font-size:20px;
+    text-align:center;
+}
+
+form{
+    margin-top:30px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:2px solid #ff0000;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#ff0000;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#b30000;
+}
+
+.suggestions{
+    margin-top:30px;
+}
+
+.suggestions h2{
+    color:#b30000;
+}
+
+ul{
+    font-size:18px;
+}
+
+.message{
+    background:#ff0000;
+    color:white;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    margin-top:30px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+footer{
+    background:#b30000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    line-height:1.8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Menu Bar -->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="2.html">Search</a></li>
+        <li><a href="3.html">Timetable</a></li>
+        <li><a href="4.html">Contact</a></li>
+        <li><a href="5.html">About</a></li>
+    </ul>
+</nav>
+
+
+<div class="container">
+
+    <h1>🔍 Smart Search</h1>
+
+    <p><b>Search Your Bus</b></p>
+    <p>Find buses quickly by entering the details below.</p>
+
+    <form>
+        <input type="text" placeholder="Enter Bus Number">
+        <input type="text" placeholder="Source Location">
+        <input type="text" placeholder="Destination">
+        <input type="datetime-local">
+
+        <button type="button" onclick="searchBus()">
+            Search Bus
+        </button>
+    </form>
+
+    <div class="suggestions">
+        <h2>🤖 AI Smart Suggestions</h2>
+
+        <ul>
+            <li>✅ Best routes</li>
+            <li>✅ Nearby bus stops</li>
+            <li>✅ Expected arrival time</li>
+            <li>✅ Alternative buses</li>
+        </ul>
+    </div>
+
+    <div class="message">
+        "Search Less, Travel More!"
+    </div>
+
+</div>
+
+<footer>
+    <p><b>Created By:</b> Ms. Shrutika Sonmale</p>
+    <p><b>College:</b> KBP Polytechnic, Satara</p>
+    <p><b>Course:</b> AI for Software Development</p>
+    <p><b>Date:</b> 29/06/2025</p>
+</footer>
+
+<script>
+function searchBus(){
+    alert("AI is searching for the best bus route for you!");
+}
+</script>
+
+</body>
+</html>
+
